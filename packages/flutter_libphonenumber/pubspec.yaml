@@ -3,6 +3,7 @@ description: Leverages libphonenumber to allow for asynchronous and synchronous 
 repository: https://github.com/bottlepay/flutter_libphonenumber/tree/main/packages/flutter_libphonenumber
 issue_tracker: https://github.com/bottlepay/flutter_libphonenumber/issues
 version: 2.3.0
+publish_to: 'none'
 
 environment:
   sdk: ">=2.19.0 <4.0.0"
@@ -27,10 +28,11 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_libphonenumber_android: ^1.0.1
+  flutter_libphonenumber_android:
+    path: ../flutter_libphonenumber_android
   flutter_libphonenumber_ios: ^1.2.1
   flutter_libphonenumber_platform_interface: ^1.0.0
-  flutter_libphonenumber_web: ^1.1.0
+  # flutter_libphonenumber_web: ^1.1.0
 
 dev_dependencies:
   flutter_test:
